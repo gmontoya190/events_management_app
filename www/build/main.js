@@ -55792,7 +55792,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/guille/Documents/events_project/events/events_management/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  The world is your oyster.\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.\n    <events-page> </events-page>\n  </p>\n</ion-content>\n'/*ion-inline-end:"/Users/guille/Documents/events_project/events/events_management/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/guille/Documents/events_project/events/events_management_app/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Qué Hay pa\' hacer hoy?\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n\n  Eventos Cerca a ti\n   <events-page> \n </events-page>\n</ion-content>\n'/*ion-inline-end:"/Users/guille/Documents/events_project/events/events_management_app/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], HomePage);
@@ -74616,7 +74616,7 @@ var MyApp = (function () {
     return MyApp;
 }());
 MyApp = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"/Users/guille/Documents/events_project/events/events_management/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/guille/Documents/events_project/events/events_management/src/app/app.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"/Users/guille/Documents/events_project/events/events_management_app/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/guille/Documents/events_project/events/events_management_app/src/app/app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
@@ -74658,7 +74658,7 @@ var EventsPage = (function () {
 }());
 EventsPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'events-page',template:/*ion-inline-start:"/Users/guille/Documents/events_project/events/events_management/src/pages/events/events.html"*/'<ion-card  *ngFor= "let e of events">\n{{e.name}}</ion-card >'/*ion-inline-end:"/Users/guille/Documents/events_project/events/events_management/src/pages/events/events.html"*/
+        selector: 'events-page',template:/*ion-inline-start:"/Users/guille/Documents/events_project/events/events_management_app/src/pages/events/events.html"*/'<ion-grid>\n<ion-row>\n\n <ion-col>\n Nombre del Evento\n</ion-col>\n<ion-col>\nId del Evento\n</ion-col>\n<ion-col>\nActivo\n</ion-col>\n  </ion-row>\n  <ion-row *ngFor= "let e of events">\n <ion-col>{{e.name}}</ion-col>\n <ion-col>{{e.eventId}}</ion-col>\n <ion-col>{{e.isActive}}</ion-col>\n</ion-row>\n</ion-grid>'/*ion-inline-end:"/Users/guille/Documents/events_project/events/events_management_app/src/pages/events/events.html"*/
     }),
     __metadata("design:paramtypes", [])
 ], EventsPage);
